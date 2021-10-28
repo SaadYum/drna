@@ -2,39 +2,40 @@
   background-image: url("../../assets/banner.png");
   background-repeat: no-repeat;
   background-position: center;
+
   background-attachment: fixed;
-  height: 200vh;
+  top: 0;
+  height: 300vh;
   background-size: 100%;
-  padding-top: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-in {
+  height: 100vh;
 }
 
 #left-rhino-banner {
-  position: absolute;
+  position: fixed;
+  object-fit: cover;
   left: 0px;
-  bottom: 0px;
-  background-repeat: no-repeat;
-  background-image: url("../../assets/left-team.png");
-  /* background-attachment: fixed; */
-
-  height: 100%;
-  width: 100%;
+  bottom: 0;
+  width: 40vw;
 }
 #right-rhino-banner {
-  position: absolute;
+  position: fixed;
   right: 0px;
-  bottom: 0px;
-  background-image: url("../../assets/right-team.png");
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  /* height: 100%; */
-  width: 100%;
+  bottom: 0;
+  width: 40vw;
 }
 
 #banner-content {
-  background: transparent;
-  height: 100vh;
-  /* margin-top:100vh; */
-  padding: 2% 10%;
+  position: fixed;
+  width: 100%;
+  top: 45vh;
+  /* padding: 2% 10%; */
   display: flex;
   flex-direction: column;
   align-items: center;
