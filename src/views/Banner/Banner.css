@@ -3,8 +3,9 @@
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  height: 200vh;
   background-size: 100%;
+  padding-top: 100vh;
 }
 
 #left-rhino-banner {
@@ -29,7 +30,32 @@
   width: 100%;
 }
 
-#content {
-  position: absolute;
-  top: 100vh;
+#banner-content {
+  background: transparent;
+  height: 100vh;
+  /* margin-top:100vh; */
+  padding: 2% 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.head {
+  position: relative;
+  z-index: 9999;
+  font-family: Sharpgroteskbook25, sans-serif;
+  color: #fff;
+}
+
+#plot-text {
+  position: relative;
+  width: 40%;
+  margin-top: 10px;
+  font-family: Montserrat, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
 }
