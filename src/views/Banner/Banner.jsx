@@ -12,8 +12,12 @@ function Banner(props) {
     let ban_content = $("#banner-content");
     let left_ban = $("#left-rhino-banner");
     let right_ban = $("#right-rhino-banner");
+    let welcome_div = $("#welcome-div");
+    let plot_text = $("#plot-text");
     $(window).on("scroll", () => {
-      console.log(window.scrollY);
+      welcome_div.css({
+        opacity: 1 - +window.scrollY / (height / 2) + "",
+      });
       if (window.scrollY < height) {
         ban.css({
           backgroundSize: 100 + window.scrollY / 12 + "%",
@@ -21,16 +25,19 @@ function Banner(props) {
         });
         left_ban.css({
           transform: `scale(${1 + window.scrollY / height}) translateX(${
-            -100 * (window.scrollY / height)
+            -100 * (window.scrollY / 2 / height)
           }%)`,
         });
         right_ban.css({
           transform: `scale(${1 + window.scrollY / height}) translateX(${
-            100 * (window.scrollY / height)
+            100 * (window.scrollY / 2 / height)
           }%)`,
         });
         ban_content.css({
-          opacity: window.scrollY / height,
+          opacity: 1.5 - height / window.scrollY,
+        });
+        plot_text.css({
+          marginTop: 50 - (50 * window.scrollY) / height + "%",
         });
       } else {
         console.log("OPACITY: ", window.scrollY / height);
@@ -38,17 +45,8 @@ function Banner(props) {
           opacity: 2 - +window.scrollY / height + "",
         });
         ban_content.css({
-          opacity: 2.8 - +window.scrollY / height,
+          opacity: 3 - +window.scrollY / height,
         });
-        // if (2.5 - +window.scrollY / height < 0) {
-        //   ban_content.css({
-        //     visibility: "hidden",
-        //   });
-        // } else {
-        //   ban_content.css({
-        //     visibility: "hidden",
-        //   });
-        // }
       }
     });
     return () => {
@@ -64,51 +62,19 @@ function Banner(props) {
           <img id="right-rhino-banner" src={right_banner} />
         </div>
       </div>
+      <div id="welcome-div">
+        <h1 className="abuget-font">The story of</h1>
+        <h4 className="montserrat-font">Deoxy Rhino Nucleic Acid</h4>
+      </div>
       <div id="banner-content">
         <h1 className="head">Plot</h1>
-        <p id="plot-text">
+        <p className="p1" id="plot-text">
           Facing foreclosure of their homes in the Goon Docks area of Astoria,
           Oregon to an expanding country club, a group of children who call
           themselves "the Goonies" gather for a final weekend together.
         </p>
       </div>
-      <p id="plot-text">
-        Facing foreclosure of their homes in the Goon Docks area of Astoria,
-        Oregon to an expanding country club, a group of children who call
-        themselves "the Goonies" gather for a final weekend together.
-      </p>
-      <p id="plot-text">
-        Facing foreclosure of their homes in the Goon Docks area of Astoria,
-        Oregon to an expanding country club, a group of children who call
-        themselves "the Goonies" gather for a final weekend together.
-      </p>
-      <p id="plot-text">
-        Facing foreclosure of their homes in the Goon Docks area of Astoria,
-        Oregon to an expanding country club, a group of children who call
-        themselves "the Goonies" gather for a final weekend together.
-      </p>
-      <p id="plot-text">
-        Facing foreclosure of their homes in the Goon Docks area of Astoria,
-        Oregon to an expanding country club, a group of children who call
-        themselves "the Goonies" gather for a final weekend together.
-      </p>
-      <p id="plot-text">
-        Facing foreclosure of their homes in the Goon Docks area of Astoria,
-        Oregon to an expanding country club, a group of children who call
-        themselves "the Goonies" gather for a final weekend together.
-      </p>
-      <p id="plot-text">
-        Facing foreclosure of their homes in the Goon Docks area of Astoria,
-        Oregon to an expanding country club, a group of children who call
-        themselves "the Goonies" gather for a final weekend together.
-      </p>
-      <p id="plot-text">
-        Facing foreclosure of their homes in the Goon Docks area of Astoria,
-        Oregon to an expanding country club, a group of children who call
-        themselves "the Goonies" gather for a final weekend together.
-      </p>
     </div>
-    // </div>
   );
 }
 

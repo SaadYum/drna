@@ -35,12 +35,30 @@
   position: fixed;
   width: 100%;
   top: 45vh;
-  /* padding: 2% 10%; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   opacity: 0;
+}
+#welcome-div {
+  position: fixed;
+  width: 100%;
+  top: 45vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+.abuget-font {
+  font-family: Abuget, sans-serif;
+}
+.montserrat-font {
+  font-family: Montserrat, sans-serif;
+}
+.sharp-font {
+  font-family: Sharpgroteskbook25, sans-serif;
 }
 
 .head {
@@ -48,15 +66,13 @@
   z-index: 9999;
   font-family: Sharpgroteskbook25, sans-serif;
   color: #fff;
+  font-size: 15px;
 }
 
-#plot-text {
-  position: relative;
-  width: 40%;
-  margin-top: 10px;
+.p1 {
+  width: 30%;
   font-family: Montserrat, sans-serif;
   color: #fff;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 8px;
   text-align: center;
 }

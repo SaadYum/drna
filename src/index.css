@@ -1,3 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url(//db.onlinewebfonts.com/c/91d3afe918937141b6ae8e43b1005bc8?family=Sharp+Grotesk+Book+25);
+@font-face {
+  font-family: "Sharpgroteskbook25";
+  src: url("//db.onlinewebfonts.com/t/91d3afe918937141b6ae8e43b1005bc8.eot");
+  src: url("//db.onlinewebfonts.com/t/91d3afe918937141b6ae8e43b1005bc8.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/91d3afe918937141b6ae8e43b1005bc8.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/91d3afe918937141b6ae8e43b1005bc8.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/91d3afe918937141b6ae8e43b1005bc8.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/91d3afe918937141b6ae8e43b1005bc8.svg#Sharp Grotesk Book 25")
+      format("svg");
+}
+@font-face {
+  font-family: "Abuget";
+  src: url("../src/fonts/abuget/Abuget.ttf");
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
