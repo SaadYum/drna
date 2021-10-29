@@ -80,7 +80,7 @@ function Banner(props) {
       </div>
       <div id="welcome-div">
         <h1 className="abuget-font">The story of</h1>
-        <h4 className="montserrat-font">Deoxy Rhino Nucleic Acid</h4>
+        <h2 className="montserrat-font">Deoxy Rhino Nucleic Acid</h2>
       </div>
       <div id="banner-content">
         <h1 className="head">Plot</h1>
