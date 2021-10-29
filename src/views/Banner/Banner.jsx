@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import banner from "../../assets/banner.png";
 import left_banner from "../../assets/left-team.png";
 import right_banner from "../../assets/right-team.png";
+import mouse_gif from "../../assets/mouse.gif";
 import "./Banner.css";
 import $ from "jquery";
 import { Container } from "react-bootstrap";
@@ -14,6 +15,7 @@ function Banner(props) {
     let right_ban = $("#right-rhino-banner");
     let welcome_div = $("#welcome-div");
     let plot_text = $("#plot-text");
+    let mid_line = $(".mid-line");
     $(window).on("scroll", () => {
       welcome_div.css({
         opacity: 1 - +window.scrollY / (height / 2) + "",
@@ -39,13 +41,23 @@ function Banner(props) {
         plot_text.css({
           marginTop: 50 - (50 * window.scrollY) / height + "%",
         });
+        mid_line.css({
+          height: 100 * (window.scrollY / height) + "px",
+        });
       } else {
-        console.log("OPACITY: ", window.scrollY / height);
+        console.log(
+          "Y: ",
+          `translateY(${-100 * (2 - height / window.scrollY)})px)`
+        );
         ban.css({
           opacity: 2 - +window.scrollY / height + "",
         });
         ban_content.css({
           opacity: 3 - +window.scrollY / height,
+        });
+        mid_line.css({
+          height: 100 * (2 - window.scrollY / height) + "px",
+          transform: `translateY(${-100 * (1 - height / window.scrollY)}px)`,
         });
       }
     });
@@ -60,6 +72,10 @@ function Banner(props) {
         <div className="banner-in">
           <img id="left-rhino-banner" src={left_banner} />
           <img id="right-rhino-banner" src={right_banner} />
+          <div className="center">
+            <div className="mid-line"></div>
+            <img src={mouse_gif} id="mouse-gif" />
+          </div>
         </div>
       </div>
       <div id="welcome-div">
@@ -73,6 +89,10 @@ function Banner(props) {
           Oregon to an expanding country club, a group of children who call
           themselves "the Goonies" gather for a final weekend together.
         </p>
+        <div className="center">
+          <div className="mid-line"></div>
+          <img src={mouse_gif} id="mouse-gif" />
+        </div>
       </div>
     </div>
   );
