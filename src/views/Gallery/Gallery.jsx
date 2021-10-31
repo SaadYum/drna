@@ -8,7 +8,7 @@ import rhino4 from "../../assets/4.png";
 import $ from "jquery";
 import "./Gallery.css";
 function Gallery(props) {
-  const { ref, inView } = useInView({
+  const { ref, inView, entry } = useInView({
     threshold: 0.5,
   });
 

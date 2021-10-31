@@ -45,10 +45,6 @@ function Banner(props) {
           height: 100 * (window.scrollY / height) + "px",
         });
       } else {
-        console.log(
-          "Y: ",
-          `translateY(${-100 * (2 - height / window.scrollY)})px)`
-        );
         ban.css({
           opacity: 2 - +window.scrollY / height + "",
         });
@@ -62,7 +58,7 @@ function Banner(props) {
       }
     });
     return () => {
-      ban.off("scroll", () => {});
+      $(window).off("scroll", () => {});
     };
   }, []);
 
@@ -85,9 +81,10 @@ function Banner(props) {
       <div id="banner-content">
         <h1 className="head">Plot</h1>
         <p className="p1" id="plot-text">
-          Facing foreclosure of their homes in the Goon Docks area of Astoria,
-          Oregon to an expanding country club, a group of children who call
-          themselves "the Goonies" gather for a final weekend together.
+          HD Rhinos of creative color and style have gathered to wager
+          themselves to a battle of intelligence and creativity. Join the
+          exclusive club of intelligent Rhinos who will decrypt their financial
+          wealth. Claim your Rhino DNA.
         </p>
         <div className="center">
           <div className="mid-line"></div>
