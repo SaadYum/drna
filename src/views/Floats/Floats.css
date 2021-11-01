@@ -1,16 +1,23 @@
 .floats {
   height: 100vh;
   display: flex;
-  overflow-x: hidden;
+  overflow: hidden;
+  padding: 10%;
   /* flex-direction: column; */
 }
 
 .floating-img {
-  width: 10vw;
+  width: 20vw;
   opacity: 0.7;
 }
 .floats-heading {
   /* position: fixed; */
   top: 45vh;
   /* opacity: 0; */
+}
+
+.myRow {
+  display: flex;
+  flex-direction: row;
+  margin: 20%;
 }

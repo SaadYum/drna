@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import banner from "../../assets/banner.png";
-import left_banner from "../../assets/left-team.png";
-import right_banner from "../../assets/right-team.png";
+import left_banner from "../../assets/left-rhinos.png";
+import right_banner from "../../assets/right-rhinos.png";
 import mouse_gif from "../../assets/mouse.gif";
 import "./Banner.css";
 import $ from "jquery";

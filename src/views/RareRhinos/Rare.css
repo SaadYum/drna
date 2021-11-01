@@ -1,0 +1,51 @@
+.rare-rhinos {
+  height: 100vh;
+  padding: 5%;
+  position: relative;
+}
+
+.rhino-col {
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+}
+
+.rhino-col::before {
+  content: "";
+  background-image: url("https://uploads-ssl.webflow.com/5cff83ac2044e22cb8cf2f11/5d25c68703e41086eb3b2da1_key-min.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.rhino-heading {
+  opacity: 0;
+  font-family: Sharpgroteskbook25, "sans-serif";
+  transition: all 0.3s ease;
+}
+.rhino-col .p-1 {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.rhino-col:hover .rhino-heading {
+  opacity: 1;
+}
+.rhino-col:hover .p-1 {
+  opacity: 1;
+}
+
+.rhino-col:hover:before {
+  opacity: 0.2;
+  /* background-size: 120%; */
+}

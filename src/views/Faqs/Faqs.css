@@ -1,0 +1,9 @@
+.faqs-wrapper .row {
+  height: 100vh;
+}
+
+.faqs {
+  margin: auto 0;
+  height: 40vh;
+  background: rgba(199, 197, 197, 0.596);
+}

@@ -1,51 +1,58 @@
-.rhino-games {
+.rhino-game-shapes-images {
+  margin: auto 20px;
+}
+
+.games {
   height: 100vh;
   padding: 5%;
-  position: relative;
+}
+
+.game-description {
+  opacity: 0.8;
+  font-family: Sharpgroteskbook25, sans-serif;
+  font-size: 11px;
 }
 
 .game-col {
-  border: 1px solid hsla(0, 0%, 100%, 0.2);
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
+  text-align: left;
+  padding: 5%;
+  height: 20vh;
   position: relative;
 }
 
-.game-col::before {
-  content: "";
-  background-image: url("https://uploads-ssl.webflow.com/5cff83ac2044e22cb8cf2f11/5d25c68703e41086eb3b2da1_key-min.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.game-title {
+  opacity: 0.8;
+  font-family: Sharpgroteskbook25, sans-serif;
+  /* font-size: 50px; */
+  padding: 15%;
+  margin-top: 5%;
+  width: 50%;
+}
+
+.fa-play-circle:hover {
+  opacity: 0.8;
+}
+
+.game-img {
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 1;
-  transition: all 0.3s ease;
+  left: 3;
 }
 
-.game-heading {
-  opacity: 0;
-  font-family: Sharpgroteskbook25, "sans-serif";
-  transition: all 0.3s ease;
-}
-.game-col .p-1 {
-  opacity: 0;
-  transition: all 0.3s ease;
+.modal-content {
+  background: black;
 }
 
-.game-col:hover .game-heading {
-  opacity: 1;
-}
-.game-col:hover .p-1 {
-  opacity: 1;
+.modal-header {
+  border: none;
 }
 
-.game-col:hover:before {
-  opacity: 0.2;
-  /* background-size: 120%; */
+.closeBtn {
+  font-size: x-large;
+  color: rgb(197, 197, 197) !important;
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}
+.closeBtn:hover {
+  opacity: 0.8;
 }
