@@ -1,9 +1,41 @@
 .faqs-wrapper .row {
   height: 100vh;
+  width: 99vw;
 }
 
 .faqs {
   margin: auto 0;
-  height: 40vh;
-  background: rgba(199, 197, 197, 0.596);
+  padding: 5%;
+  height: 50vh;
+  color: rgba(255, 255, 255, 0.733);
+  overflow-y: scroll;
+  border-radius: 10px;
+  font-family: Sharpgroteskbook25, sans-serif;
+}
+
+.faqs h1 {
+  font-size: 25px;
+}
+.faqs p {
+  font-size: 14px;
+}
+
+.faqs::-webkit-scrollbar {
+  width: 0px;
+}
+.faq-rhino {
+  width: 22vw;
+  position: absolute;
+  right: 10vw;
+  bottom: 0;
+}
+
+.faq-imgs {
+  position: relative;
+}
+.faq-img {
+  width: 22vw;
+  position: absolute;
+  right: 10vw;
+  top: 20vh;
 }

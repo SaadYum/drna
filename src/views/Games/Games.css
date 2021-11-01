@@ -3,14 +3,14 @@
 }
 
 .games {
-  height: 100vh;
+  height: 120vh;
   padding: 5%;
 }
 
 .game-description {
   opacity: 0.8;
   font-family: Sharpgroteskbook25, sans-serif;
-  font-size: 11px;
+  font-size: 0.6vw;
 }
 
 .game-col {

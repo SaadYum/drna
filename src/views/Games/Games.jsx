@@ -6,7 +6,6 @@ import Square from "../../assets/squre.png";
 import rps from "../../assets/rps.png";
 import qmark from "../../assets/qmark.png";
 import sands from "../../assets/sands.png";
-import introVideo from "../../assets/intro.mp4";
 import LeftBounceIn from "../../animations/LeftBounceIn";
 import RightBounceIn from "../../animations/RightBounceIn";
 import Rotate from "../../animations/Rotate";
@@ -119,9 +118,11 @@ in a row and you can end up with 16 RHINOS!"
         <Modal.Body>
           <ReactPlayer
             controls={true}
-            url={introVideo}
+            url={
+              "https://www.youtube.com/watch?v=wue5q8Nb3Z4&ab_channel=TechBurner"
+            }
             width="100%"
-            height="100%"
+            height="80vh"
           />
         </Modal.Body>
       </Modal>
