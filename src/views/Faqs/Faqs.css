@@ -1,6 +1,7 @@
 .faqs-wrapper .row {
   height: 100vh;
   width: 99vw;
+  position: relative;
 }
 
 .faqs {
@@ -11,6 +12,20 @@
   overflow-y: scroll;
   border-radius: 10px;
   font-family: Sharpgroteskbook25, sans-serif;
+  z-index: 1000;
+}
+
+.faqs::before {
+  content: "";
+  position: absolute;
+  top: 20vh;
+  left: 0;
+  right: 0;
+  width: 55vw;
+  height: 60vh;
+  /* box-shadow: inset 0px 2vh 10vh 5vh rgb(122, 122, 122); */
+  box-shadow: inset 0px 10vh 10vh 1vw #000, inset 0px -25vh 10vh 1vw #000;
+  /* box-shadow: inset 0px 0px 0px 2px black; */
 }
 
 .faqs h1 {
@@ -18,6 +33,10 @@
 }
 .faqs p {
   font-size: 14px;
+}
+
+.faq {
+  z-index: -1;
 }
 
 .faqs::-webkit-scrollbar {

@@ -3,9 +3,12 @@ import banner from "../../assets/banner.png";
 import left_banner from "../../assets/left-rhinos.png";
 import right_banner from "../../assets/right-rhinos.png";
 import mouse_gif from "../../assets/mouse.gif";
+import center_text from "../../assets/center-logo.png";
+
 import "./Banner.css";
 import $ from "jquery";
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 function Banner(props) {
   const height = window.innerHeight;
   useEffect(() => {
@@ -76,7 +79,10 @@ function Banner(props) {
       </div>
       <div id="welcome-div">
         <h1 className="abuget-font">The story of</h1>
-        <h2 className="montserrat-font">Deoxy Rhino Nucleic Acid</h2>
+        <img src={center_text} style={{ width: "40vw" }} />
+        <Link to="/mint">
+          <div className="mint-btn">Mint Now</div>
+        </Link>
       </div>
       <div id="banner-content">
         <h1 className="head">Plot</h1>

@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import rhino from "../../assets/faq-scholar.png";
 import faqImg from "../../assets/faq-sign.png";
+import shadow from "../../assets/faq-shadow.png";
+import $ from "jquery";
+
 import "./Faqs.css";
 function Faqs(props) {
   const qnas = [
@@ -48,13 +51,14 @@ function Faqs(props) {
       answer: `Within 24 hours after launch.`,
     },
   ];
+
   return (
     <div className="faqs-wrapper">
       <Row>
         <Col md={7} lg={7} sm={7} xs={12} className="faqs">
-          {qnas.map((qna) => {
+          {qnas.map((qna, i) => {
             return (
-              <div className="pb-4">
+              <div className="pb-4 faq" key={i}>
                 <h1>{qna.question}</h1>
                 <p>{qna.answer}</p>
               </div>

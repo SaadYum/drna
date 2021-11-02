@@ -3,8 +3,9 @@
 }
 
 .games {
-  height: 120vh;
+  height: 100vh;
   padding: 5%;
+  position: relative;
 }
 
 .game-description {
@@ -55,4 +56,12 @@
 }
 .closeBtn:hover {
   opacity: 0.8;
+}
+
+.front-man {
+  position: absolute;
+  bottom: 0;
+  left: 2vw;
+  width: 35vw;
+  opacity: 0.7;
 }

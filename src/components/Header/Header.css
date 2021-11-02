@@ -2,10 +2,17 @@
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .nav-item {
   padding: 2%;
   font-size: 0.7vw;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
 }

@@ -6,6 +6,7 @@ import Square from "../../assets/squre.png";
 import rps from "../../assets/rps.png";
 import qmark from "../../assets/qmark.png";
 import sands from "../../assets/sands.png";
+import front_man from "../../assets/front-man.png";
 import LeftBounceIn from "../../animations/LeftBounceIn";
 import RightBounceIn from "../../animations/RightBounceIn";
 import Rotate from "../../animations/Rotate";
@@ -31,6 +32,7 @@ function Games(props) {
   return (
     <>
       <div className="games">
+        <img src={front_man} className="front-man" />
         <div style={{ display: "flex", justifyContent: "center" }}>
           <LeftBounceIn delay={1}>
             <img

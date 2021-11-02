@@ -25,7 +25,6 @@ function Floats(props) {
     let float_4 = $(".float-4");
     let floats_heading = $(".floats-heading");
     $(window).on("scroll", () => {
-      console.log("OPAC: ", 1 - (offsetFloats - window.scrollY) / height);
       float_1.css({
         transform: `translateY(${
           ((offsetFloats - window.scrollY) / height) * 100
