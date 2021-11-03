@@ -19,8 +19,10 @@
   position: absolute;
   bottom: 10vh;
   left: 0;
+  opacity: 0.9;
 }
 .floats-heading-left {
+  opacity: 0.9;
   position: absolute;
   bottom: 10vh;
   right: 0;

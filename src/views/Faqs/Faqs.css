@@ -5,6 +5,7 @@
 }
 
 .faqs {
+  text-align: left;
   margin: auto 0;
   padding: 5%;
   height: 50vh;
@@ -18,14 +19,12 @@
 .faqs::before {
   content: "";
   position: absolute;
-  top: 20vh;
+  top: 22vh;
   left: 0;
   right: 0;
   width: 55vw;
   height: 60vh;
-  /* box-shadow: inset 0px 2vh 10vh 5vh rgb(122, 122, 122); */
-  box-shadow: inset 0px 10vh 10vh 1vw #000, inset 0px -25vh 10vh 1vw #000;
-  /* box-shadow: inset 0px 0px 0px 2px black; */
+  box-shadow: inset 0px 5vh 10vh 0vw #000, inset 0px -10vh 10vh 0vw #000;
 }
 
 .faqs h1 {

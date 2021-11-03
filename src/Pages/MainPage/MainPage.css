@@ -1,9 +1,9 @@
 .loading-screen {
   height: 100vh;
-  background-image: url("../../assets/loading-logo.png");
+  background-image: url("../../assets/animated_logo.gif");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #f3ec19;
+  background-color: #eaf10e;
 
   background-attachment: fixed;
   top: 0;
@@ -20,7 +20,7 @@
 .percentage {
   font-family: Sharpgroteskbook25, sans-serif;
   font-size: 15vh;
-  color: black;
+  color: rgb(43, 43, 43);
   position: fixed;
   left: 39%;
   top: 50%;

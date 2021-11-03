@@ -1,6 +1,6 @@
 .mint-logo {
   width: 25vw;
-  border-radius: 20px;
+  border-radius: 70px;
 }
 
 .mint-row {
@@ -12,8 +12,35 @@
   display: flex;
   flex-direction: column;
 
-  align-items: center;
   justify-content: center;
+}
+.mint-col-1 {
+  padding-left: 20%;
+}
+
+.mint-col-2 {
+  align-items: center;
+}
+
+.mint-col .head {
+  text-align: left;
+}
+.mint-col p {
+  text-align: left;
+}
+
+.wallet-btn {
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: 1px solid white;
+  width: 12vw;
+  font-size: 1vh;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.wallet-btn:hover {
+  transform: scale(1.2);
 }
 
 #mint-slider {

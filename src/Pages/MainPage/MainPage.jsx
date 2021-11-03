@@ -11,13 +11,10 @@ import Faqs from "../../views/Faqs/Faqs";
 import "./MainPage.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import EndingBanner from "../../views/EndingBanner/EndingBanner";
 export default function MainPage() {
   const [loading, setloading] = useState(true);
   const [counter, setCounter] = useState(0);
-
-  const { ref, inView, entry } = useInView({
-    threshold: 0,
-  });
 
   useEffect(() => {
     let loading_fade = $(".loading-fade");
@@ -32,6 +29,7 @@ export default function MainPage() {
       setloading(false);
       clearInterval(interval);
     }, 5000);
+    //5000
     return () => {
       clearInterval(interval);
       clearTimeout(timer);
@@ -40,20 +38,11 @@ export default function MainPage() {
   return (
     <>
       {loading ? (
-        <motion.div
-          initial={{ scaleY: 0, opacity: 0 }}
-          animate={{ scaleY: 1, opacity: 1 }}
-          exit={{ scaleY: 0, opacity: 0 }}
-          transition={{ duration: 1 }}
-        >
+        <div>
           <LoadingPage percentage={counter} />
-        </motion.div>
+        </div>
       ) : (
-        <motion.div
-          ref={ref}
-          animate={inView ? { opacity: 1 } : { opacity: 0 }}
-          transition={{ duration: 1 }}
-        >
+        <div>
           <NavBar />
           <Header />
           <Banner />
@@ -62,7 +51,8 @@ export default function MainPage() {
           <Games />
           <RareRhinos />
           <Faqs />
-        </motion.div>
+          <EndingBanner />
+        </div>
       )}
     </>
   );

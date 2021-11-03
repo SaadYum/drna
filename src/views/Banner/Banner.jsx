@@ -79,7 +79,7 @@ function Banner(props) {
       </div>
       <div id="welcome-div">
         <h1 className="abuget-font">The story of</h1>
-        <img src={center_text} style={{ width: "30vw" }} />
+        <img src={center_text} style={{ width: "25vw" }} />
         <Link to="/mint">
           <div className="mint-btn">Mint Now</div>
         </Link>
