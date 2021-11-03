@@ -5,11 +5,17 @@ import logo from "../../assets/logo.png";
 import { Link } from "react-router-dom";
 import RightBounceIn from "../../animations/RightBounceIn";
 import LazyShow from "../../animations/LazyShow";
+import { motion } from "framer-motion";
 export default function MintPage() {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ height: 0, opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="back-btn">
-        <Link to="/">
+        <Link to="/home">
           <i className="fas fa-arrow-circle-left"></i>
         </Link>
       </div>
@@ -39,6 +45,6 @@ export default function MintPage() {
           </RightBounceIn>
         </Col>
       </Row>
-    </div>
+    </motion.div>
   );
 }
