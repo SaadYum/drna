@@ -27,12 +27,15 @@ export default function EndingBanner() {
         </div>
         {/* <LazyShow delay={3}> */}
         <div id="welcome-div">
-          <h1 className="sharp-font">Become part of the DNA today</h1>
-          <div className="myRow">
+          <h1 className="montserrat-font">Become a part of the DNA today</h1>
+          <Link to="/mint">
+            <div className="mint-btn">Mint Now</div>
+          </Link>
+          <div className="myRow btn-row mt-5">
             <a
               target="blank"
               href="https://discord.gg/drna"
-              style={{ marginRight: "10px" }}
+              style={{ marginRight: "2vw" }}
             >
               {" "}
               <img className="nav-bar-icons " src={discord} alt="D icon" />

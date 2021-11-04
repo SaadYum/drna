@@ -1,7 +1,7 @@
 .discord-icon {
   position: fixed;
   left: 2vw;
-  top: 1.5vh;
+  top: 2.5vh;
 }
 .twitter-icon {
   position: fixed;
@@ -9,6 +9,11 @@
   bottom: 2vh;
 }
 .nav-bar-icons {
-  width: 3vw;
-  z-index: 1000;
+  width: 2.5vw;
+  z-index: 1100;
+  transition: all 0.2s ease;
+}
+
+.nav-bar-icons:hover {
+  transform: scale(1.2);
 }

@@ -1,4 +1,5 @@
 .loading-screen {
+  text-align: right;
   height: 100vh;
   background-image: url("../../assets/animated_logo.gif");
   background-repeat: no-repeat;
@@ -18,11 +19,27 @@
   bottom: 0;
 }
 .percentage {
+  width: 4vw;
+  text-align: right;
   font-family: Sharpgroteskbook25, sans-serif;
   font-size: 15vh;
   color: rgb(43, 43, 43);
   position: fixed;
   left: 39%;
+  top: 50%;
+  z-index: 100;
+  opacity: 0.8;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff,
+    0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+}
+.percentage-2 {
+  width: 4vw;
+  text-align: right;
+  font-family: Sharpgroteskbook25, sans-serif;
+  font-size: 15vh;
+  color: rgb(43, 43, 43);
+  position: fixed;
+  left: 53%;
   top: 50%;
   z-index: 100;
   opacity: 0.8;

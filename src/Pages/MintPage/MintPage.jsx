@@ -7,7 +7,7 @@ import RightBounceIn from "../../animations/RightBounceIn";
 import LazyShow from "../../animations/LazyShow";
 import { motion } from "framer-motion";
 export default function MintPage() {
-  const [mintVal, setmintVal] = useState(0);
+  const [mintVal, setmintVal] = useState(1);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -26,7 +26,7 @@ export default function MintPage() {
           <div className="sharp-font my-3 wallet-btn">CONNECT WALLET</div>
           <input
             type="range"
-            min={0}
+            min={1}
             max={5}
             id="mint-slider"
             value={mintVal}

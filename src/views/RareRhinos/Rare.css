@@ -13,7 +13,6 @@
   cursor: pointer;
   position: relative;
 }
-
 .rare-img {
   position: absolute;
   z-index: 0;

@@ -87,10 +87,10 @@ function Banner(props) {
       <div id="banner-content">
         <h1 className="head">Plot</h1>
         <p className="p1" id="plot-text">
-          HD Rhinos of creative color and style have gathered to wager
-          themselves to a battle of intelligence and creativity. Join the
-          exclusive club of intelligent Rhinos who will decrypt their financial
-          wealth. Claim your Rhino DNA.
+          Rhinos of creative color and style have gathered to wager themselves
+          to a battle of intelligence and creativity. Join the exclusive club of
+          intelligent Rhinos who will decrypt their financial wealth. Claim your
+          Rhino DNA.
         </p>
         <div className="center">
           <div className="mid-line"></div>

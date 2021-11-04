@@ -1,0 +1,31 @@
+.launch-schedule {
+  height: 100vh;
+  flex-direction: column;
+}
+
+.launch-row1 {
+  width: 80%;
+  padding-bottom: 2vh;
+  border-bottom: 1px solid #fff;
+}
+.launch-row2 {
+  width: 80%;
+  padding-top: 3vh;
+}
+
+.upper-schedule-col {
+  text-align: left;
+  position: relative;
+}
+
+.ball {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(3.5vh);
+  z-index: 1000;
+}

@@ -12,6 +12,8 @@ import "./MainPage.css";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import EndingBanner from "../../views/EndingBanner/EndingBanner";
+import { Row } from "react-bootstrap";
+import LaunchSchedule from "../../views/LauchSchedule/LaunchSchedule";
 export default function MainPage() {
   const [loading, setloading] = useState(true);
   const [counter, setCounter] = useState(0);
@@ -50,6 +52,7 @@ export default function MainPage() {
           <Floats />
           <Games />
           <RareRhinos />
+          <LaunchSchedule />
           <Faqs />
           <EndingBanner />
         </div>
@@ -60,7 +63,10 @@ export default function MainPage() {
 const LoadingPage = (props) => {
   return (
     <div className="loading-screen">
-      <h1 className="percentage">{props.percentage} %</h1>
+      <div className="myRow">
+        <h1 className="percentage">{props.percentage}</h1>
+        <h1 className="percentage-2">%</h1>
+      </div>
       <div className="loading-fade"></div>
     </div>
   );
