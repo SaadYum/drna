@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import "./LaunchSchedule.css";
 function LaunchSchedule(props) {
+  useLayoutEffect(() => {
+    let animatedCursor = document.querySelector(".animated-cursor");
+    let animatedCursorDiv = document.querySelector(".animated-cursor-div");
+    animatedCursorDiv.addEventListener("mousemove", (e) => {
+      animatedCursor.style.top = e.pageY + "px";
+      animatedCursor.style.left = e.pageX + "px";
+    });
+    return () => {
+      animatedCursorDiv.removeEventListener("mousemove", () => {});
+    };
+  }, []);
   return (
-    <div className="launch-schedule center">
+    <div className="launch-schedule center animated-cursor-div">
+      <div className="animated-cursor"></div>
       <Row className="launch-row1">
         <Col lg={2} md={2} sm={2} className="upper-schedule-col">
           <p className="montserrat-font">

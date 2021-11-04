@@ -10,7 +10,7 @@
 }
 .launch-row2 {
   width: 80%;
-  padding-top: 3vh;
+  margin-top: 4vh;
 }
 
 .upper-schedule-col {
@@ -28,4 +28,37 @@
   bottom: 0;
   transform: translateY(3.5vh);
   z-index: 1000;
+}
+
+.animated-cursor {
+  z-index: 2000;
+  cursor: none !important;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+
+.animated-cursor-div:hover .animated-cursor {
+  width: 100px;
+  animation: cursor_animation 2s linear infinite;
+  height: 100px;
+}
+
+@keyframes cursor_animation {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+  50% {
+    width: 80px;
+    height: 80px;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+  }
 }

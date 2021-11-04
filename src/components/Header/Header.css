@@ -16,3 +16,17 @@
   opacity: 0.8;
   transform: scale(1.2);
 }
+
+.nav-rhino {
+  width: 1.5vh;
+  position: absolute;
+  bottom: 4vh;
+  left: 7.5vw;
+  transition: all 0.5s ease-in-out;
+}
+
+@media (min-width: 1200px) {
+  .nav-rhino {
+    left: 7;
+  }
+}

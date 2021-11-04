@@ -8,16 +8,29 @@
 
   background-attachment: fixed;
   top: 0;
+  overflow: hidden;
 }
 
 .loading-fade {
-  /* height: 20vh; */
   width: 100%;
-  opacity: 0.7;
+  opacity: 0.3;
   background: black;
   position: absolute;
+  height: 100vh;
   bottom: 0;
+  animation: laoding_animation 5s linear;
 }
+
+@keyframes laoding_animation {
+  from {
+    height: 0vh;
+  }
+
+  to {
+    height: 100vh;
+  }
+}
+
 .percentage {
   width: 4vw;
   text-align: right;
