@@ -17,7 +17,7 @@
   z-index: 100;
   cursor: pointer;
   object-fit: cover;
-  margin: 0px 1vw;
+  margin: 0px 0.1vw;
   /* overflow: hidden; */
   transition: all 0.3s ease;
 }

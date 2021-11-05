@@ -1,7 +1,21 @@
-import React, { useLayoutEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import { Col, Row } from "react-bootstrap";
+import { useInView } from "react-intersection-observer";
 import "./LaunchSchedule.css";
+import $ from "jquery";
 function LaunchSchedule(props) {
+  const { ref, inView, entry } = useInView({
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      $(".nav-rhino").css({
+        transform: "translateX(75.5vw)",
+      });
+    }
+  }, [inView]);
+
   useLayoutEffect(() => {
     let animatedCursor = document.querySelector(".animated-cursor");
     let animatedCursorDiv = document.querySelector(".animated-cursor-div");
@@ -14,7 +28,7 @@ function LaunchSchedule(props) {
     };
   }, []);
   return (
-    <div className="launch-schedule center animated-cursor-div">
+    <div className="launch-schedule center animated-cursor-div" ref={ref}>
       <div className="animated-cursor"></div>
       <Row className="launch-row1">
         <Col lg={2} md={2} sm={2} className="upper-schedule-col">

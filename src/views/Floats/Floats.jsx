@@ -7,10 +7,24 @@ import { Col, Row } from "react-bootstrap";
 import ReactPlayer from "react-player";
 import RightBounceIn from "../../animations/RightBounceIn";
 import LeftBounceIn from "../../animations/LeftBounceIn";
+import { useInView } from "react-intersection-observer";
+import $ from "jquery";
 function Floats(props) {
+  const { ref, inView, entry } = useInView({
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      $(".nav-rhino").css({
+        transform: "translateX(29vw)",
+      });
+    }
+  }, [inView]);
+
   return (
     <>
-      <div className="floats">
+      <div className="floats" ref={ref}>
         <Row>
           <Col lg={6} md={6} sm={6} xs={12} className="floats-col">
             {/* <ReactPlayer

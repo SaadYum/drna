@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import "./Rare.css";
 import rhino1 from "../../assets/BTC-Maximalist-Starter-Pack.png";
@@ -7,9 +7,23 @@ import rhino3 from "../../assets/Vaccinated-Zombie-Police.png";
 import q1 from "../../assets/q1-rhino.png";
 import q2 from "../../assets/q2-rhino.png";
 import q3 from "../../assets/q3-rhino.png";
+import $ from "jquery";
+import { useInView } from "react-intersection-observer";
 function RareRhinos(props) {
+  const { ref, inView, entry } = useInView({
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      $(".nav-rhino").css({
+        transform: "translateX(58.5vw)",
+      });
+    }
+  }, [inView]);
+
   return (
-    <div className="rare-rhinos mt-5 center">
+    <div className="rare-rhinos mt-5 center" ref={ref}>
       <Row>
         <Col md={2} lg={2} sm={2} xs={6} id="rhino-1">
           <div className="rhino-col center">

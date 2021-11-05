@@ -6,6 +6,7 @@ import shadow from "../../assets/faq-shadow.png";
 import $ from "jquery";
 
 import "./Faqs.css";
+import { useInView } from "react-intersection-observer";
 function Faqs(props) {
   const qnas = [
     {
@@ -52,8 +53,20 @@ function Faqs(props) {
     },
   ];
 
+  const { ref, inView, entry } = useInView({
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      $(".nav-rhino").css({
+        transform: "translateX(87.5vw)",
+      });
+    }
+  }, [inView]);
+
   return (
-    <div className="faqs-wrapper">
+    <div className="faqs-wrapper" ref={ref}>
       <Row>
         <Col md={7} lg={7} sm={7} xs={12} className="faqs">
           {qnas.map((qna, i) => {

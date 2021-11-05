@@ -9,8 +9,21 @@ import "./Banner.css";
 import $ from "jquery";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 function Banner(props) {
   const height = window.innerHeight;
+  const { ref, inView, entry } = useInView({
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      $(".nav-rhino").css({
+        transform: "translateX(0%)",
+      });
+    }
+  }, [inView]);
+
   useEffect(() => {
     let ban = $("#banner");
     let ban_content = $("#banner-content");
@@ -84,13 +97,12 @@ function Banner(props) {
           <div className="mint-btn">Mint Now</div>
         </Link>
       </div>
-      <div id="banner-content">
+      <div id="banner-content" ref={ref}>
         <h1 className="head">Plot</h1>
         <p className="p1" id="plot-text">
           Rhinos of creative color and style have gathered to wager themselves
           to a battle of intelligence and creativity. Join the exclusive club of
-          intelligent Rhinos who will decrypt their financial wealth. Claim your
-          Rhino DNA.
+          Rhinos who will decrypt their financial wealth. Claim your Rhino DNA.
         </p>
         <div className="center">
           <div className="mid-line"></div>

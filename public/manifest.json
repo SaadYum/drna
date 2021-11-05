@@ -1,9 +1,10 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "DRNA",
+  "name": "Deoxy Rhino Nucleic Acid",
+  "description": "Deoxy Rhino Nucleic Acid - Gamified NFT series of Rhinos who will battle out their intelligence",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
@@ -18,7 +19,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "drna.club",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

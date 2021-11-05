@@ -36,6 +36,9 @@ function Games(props) {
 
   useEffect(() => {
     if (inView) {
+      $(".nav-rhino").css({
+        transform: "translateX(41.8vw)",
+      });
       $(".front-man").css({
         transform: "translateX(0%)",
       });
@@ -131,8 +134,11 @@ function Games(props) {
           </Col>
         </Row>
         <div className="mt-5">
+          <p className="game-description mt-5">
+            Watch the explainer video here
+          </p>
           <i
-            className="fas fa-play-circle"
+            className="fas fa-play-circle mt-4"
             style={{ color: "white", fontSize: "3vw", cursor: "pointer" }}
             onClick={() => setshowVideo(true)}
           ></i>
@@ -161,9 +167,7 @@ function Games(props) {
         <Modal.Body>
           <ReactPlayer
             controls={true}
-            url={
-              "https://www.youtube.com/watch?v=wue5q8Nb3Z4&ab_channel=TechBurner"
-            }
+            url={"https://youtu.be/bIbblP9bkzk"}
             width="100%"
             height="80vh"
           />
