@@ -55,7 +55,7 @@ function Banner(props) {
           opacity: 1.5 - height / window.scrollY,
         });
         plot_text.css({
-          marginTop: 50 - (50 * window.scrollY) / height + "%",
+          marginTop: 25 - (25 * window.scrollY) / height + "%",
         });
         mid_line.css({
           height: 100 * (window.scrollY / height) + "px",
