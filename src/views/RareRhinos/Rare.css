@@ -13,6 +13,11 @@
   cursor: pointer;
   position: relative;
 }
+
+.rhino-description {
+  font-size: 1vw;
+}
+
 .rare-img {
   position: absolute;
   z-index: 0;
@@ -38,7 +43,7 @@
   font-size: 1vw;
   transition: all 0.3s ease;
 }
-.rhino-col .p-1 {
+.rhino-col .rhino-description {
   z-index: 100;
   opacity: 0;
   transition: all 0.3s ease;
@@ -47,7 +52,7 @@
 .rhino-col:hover .rhino-heading {
   opacity: 1;
 }
-.rhino-col:hover .p-1 {
+.rhino-col:hover .rhino-description {
   opacity: 1;
 }
 .rhino-col:hover .rare-img {

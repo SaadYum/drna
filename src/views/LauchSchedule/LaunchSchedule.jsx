@@ -32,7 +32,7 @@ function LaunchSchedule(props) {
       <div className="animated-cursor"></div>
       <Row className="launch-row1">
         <Col lg={2} md={2} sm={2} className="upper-schedule-col">
-          <p className="montserrat-font">
+          <p className="montserrat-font rhino-description">
             Rhinos on the loose, look out for the 6 super rare Rhinos (could be
             more down the track).
           </p>
@@ -45,7 +45,7 @@ function LaunchSchedule(props) {
         </Col>
 
         <Col lg={2} md={2} sm={2} className="upper-schedule-col">
-          <p className="montserrat-font">
+          <p className="montserrat-font rhino-description">
             Create your own art, story or videos. The winner will receive one of
             the Super Rare Rhinos.
           </p>
@@ -56,7 +56,7 @@ function LaunchSchedule(props) {
           <div className="ball" />
         </Col>
         <Col lg={2} md={2} sm={2} className="upper-schedule-col">
-          <p className="montserrat-font">
+          <p className="montserrat-font rhino-description">
             Get ready for the floor price to rise! The DRNA team will now be
             buying back 25 Rhinos from OpenSea.
           </p>
@@ -71,7 +71,7 @@ function LaunchSchedule(props) {
         <Col lg={2} md={2} sm={2} className="upper-schedule-col"></Col>
         <Col lg={2} md={2} sm={2} className="upper-schedule-col">
           <h4 className="sharp-font">25%</h4>
-          <p className="montserrat-font">
+          <p className="montserrat-font rhino-description">
             25 NFT Rhinos will air drop into the most active minters in the
             community.
           </p>
@@ -79,7 +79,7 @@ function LaunchSchedule(props) {
         <Col lg={2} md={2} sm={2} className="upper-schedule-col"></Col>
         <Col lg={2} md={2} sm={2} className="upper-schedule-col">
           <h4 className="sharp-font">75%</h4>
-          <p className="montserrat-font">
+          <p className="montserrat-font rhino-description">
             25 Rhino NFTs will air drop to random minters. One of them will win
             $5,000 USDC.
           </p>
@@ -88,7 +88,7 @@ function LaunchSchedule(props) {
         <Col lg={2} md={2} sm={2} className="upper-schedule-col"></Col>
         <Col lg={2} md={2} sm={2} className="upper-schedule-col">
           <h4 className="sharp-font">BONUS</h4>
-          <p className="montserrat-font">
+          <p className="montserrat-font rhino-description">
             $20,000 USDC airdrop to a lucky minter
           </p>
         </Col>

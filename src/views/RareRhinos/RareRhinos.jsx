@@ -29,7 +29,7 @@ function RareRhinos(props) {
           <div className="rhino-col center">
             <img src={rhino1} className="rare-img" />
             <h4 className="rhino-heading">BTC Maximalist Starter Pack</h4>
-            <p className="p-1">
+            <p className="rhino-description">
               Bitcoin Maximalists come in all different shapes and sizes. But do
               they though?
             </p>
@@ -39,7 +39,7 @@ function RareRhinos(props) {
           <div className="rhino-col center">
             <img src={rhino2} className="rare-img" />
             <h4 className="rhino-heading">Vaccinated MMA Fighter</h4>
-            <p className="p-1">
+            <p className="rhino-description">
               This Rhino self proclaims that he has nothing to do with a very
               well known MMA fighter.
             </p>
@@ -49,7 +49,7 @@ function RareRhinos(props) {
           <div className="rhino-col center">
             <img src={rhino3} className="rare-img" />
             <h4 className="rhino-heading">Vaccinated Zombie Police</h4>
-            <p className="p-1">
+            <p className="rhino-description">
               COVID is not a virus this Rhino will be spreading, other than the
               zombie virus and racial profiling. There are no vaccinations for
               those yet.
@@ -60,7 +60,7 @@ function RareRhinos(props) {
           <div className="rhino-col center">
             <img src={q1} className="rare-img" />
             <h4 className="rhino-heading">REVEALED SOON</h4>
-            <p className="p-1">
+            <p className="rhino-description">
               SUPER RARE RHINO REVEALED SOON Follow Discord/Twitter for updates
             </p>
           </div>
@@ -69,7 +69,7 @@ function RareRhinos(props) {
           <div className="rhino-col center">
             <img src={q2} className="rare-img" />
             <h4 className="rhino-heading">REVEALED SOON</h4>
-            <p className="p-1">
+            <p className="rhino-description">
               SUPER RARE RHINO REVEALED SOON Follow Discord/Twitter for updates
             </p>
           </div>
@@ -78,7 +78,7 @@ function RareRhinos(props) {
           <div className="rhino-col center">
             <img src={q3} className="rare-img" />
             <h4 className="rhino-heading">REVEALED SOON</h4>
-            <p className="p-1">
+            <p className="rhino-description">
               SUPER RARE RHINO REVEALED SOON Follow Discord/Twitter for updates
             </p>
           </div>

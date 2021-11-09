@@ -15,49 +15,46 @@ import EndingBanner from "../../views/EndingBanner/EndingBanner";
 import { Row } from "react-bootstrap";
 import LaunchSchedule from "../../views/LauchSchedule/LaunchSchedule";
 export default function MainPage() {
-  const [loading, setloading] = useState(true);
-  const [counter, setCounter] = useState(0);
+  // const [loading, setloading] = useState(true);
+  // const [counter, setCounter] = useState(0);
 
-  useEffect(() => {
-    let loading_fade = $(".loading-fade");
+  // useEffect(() => {
+  //   let loading_fade = $(".loading-fade");
 
-    const interval = setInterval(() => {
-      loading_fade.css({
-        minHeight: counter + "vh",
-      });
-      setCounter((prevCounter) => prevCounter + 1);
-    }, 50);
-    const timer = setTimeout(() => {
-      setloading(false);
-      clearInterval(interval);
-    }, 5000);
-    //5000
-    return () => {
-      clearInterval(interval);
-      clearTimeout(timer);
-    };
-  }, []);
+  //   const interval = setInterval(() => {
+  //     loading_fade.css({
+  //       minHeight: counter + "vh",
+  //     });
+  //     setCounter((prevCounter) => prevCounter + 1);
+  //   }, 50);
+  //   const timer = setTimeout(() => {
+  //     setloading(false);
+  //     clearInterval(interval);
+  //   }, 5000);
+  //   //5000
+  //   return () => {
+  //     clearInterval(interval);
+  //     clearTimeout(timer);
+  //   };
+  // }, []);
   return (
-    <>
-      {loading ? (
-        <div>
-          <LoadingPage percentage={counter} />
-        </div>
-      ) : (
-        <div>
-          <NavBar />
-          <Header />
-          <Banner />
-          <Gallery />
-          <Floats />
-          <Games />
-          <RareRhinos />
-          <LaunchSchedule />
-          <Faqs />
-          <EndingBanner />
-        </div>
-      )}
-    </>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ height: 0, opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <NavBar />
+      <Header />
+      <Banner />
+      <Gallery />
+      <Floats />
+      <Games />
+      <RareRhinos />
+      <LaunchSchedule />
+      <Faqs />
+      <EndingBanner />
+    </motion.div>
   );
 }
 const LoadingPage = (props) => {
